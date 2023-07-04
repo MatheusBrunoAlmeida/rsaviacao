@@ -35,15 +35,13 @@ export default function PriceCard({
               {description}
             </Text>
           </Box>
-          {header ? (
-            <Text className="package__price" sx={styles.price}>
-              <span>Starting from</span>
-              <div className="price">
-                {priceWithUnit}
-                <sub>{pricePeriod}</sub>
-              </div>
-            </Text>
-          ) : null}
+          <Text className="package__price" sx={styles.price}>
+            <span>Por apenas</span>
+            <div className="price">
+              {priceWithUnit}
+              <sub>{pricePeriod}</sub>
+            </div>
+          </Text>
         </Flex>
         <PricingList items={points} childStyle={styles.listItem} />
         <Box
@@ -194,7 +192,7 @@ const styles = {
       lineHeight: 1.25,
       display: 'block',
       marginBottom: '10px',
-      color: 'white',
+      // color: 'white',
     },
     '> .price': {
       marginBottom: 0,

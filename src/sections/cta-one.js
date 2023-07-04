@@ -6,10 +6,10 @@ const CtaOne = () => {
   return (
     <Box as="section" sx={styles.ctaBox}>
       <Container>
-        <Heading as="h3">{'Ready to learn design \n with Nia Matos'}</Heading>
+        <Heading as="h3">{'Pronto(a) para aprender \n com Raffael Santos?'}</Heading>
         <Link
           path="#"
-          label="Start Learning Today"
+          label="Começar agora!"
           sx={styles.ctaBox.button}
           variant="buttons.primary"
         />

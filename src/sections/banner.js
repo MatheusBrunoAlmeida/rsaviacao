@@ -145,7 +145,7 @@ const styles = {
           marginLeft: ['3px', null, '5px'],
         },
         '&:last-of-type': {
-          color: 'rgba(2, 7, 62, 0.2)',
+          // color: 'rgba(2, 7, 62, 0.2)',
           marginRight: '10px',
         },
       },

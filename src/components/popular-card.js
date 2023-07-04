@@ -42,8 +42,7 @@ const PopularCard = (props) => {
               <Link path="/" label={props.title} />
             </Heading>
             <Text as="p">
-              Get your tutorials delivered at let home collect sample from the
-              victory of the managments.
+              {props.info}
             </Text>
           </Box>
           <Box sx={styles.popularCard.buttonBox}>

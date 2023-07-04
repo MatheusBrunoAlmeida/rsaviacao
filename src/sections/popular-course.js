@@ -4,16 +4,17 @@ import BlockTitle from 'components/block-title';
 import PopularCard from 'components/popular-card';
 
 const popularCourseData = [
-  { 
+  {   
     title:
       'Meteorologia',
     reviewCount: '',
     watchCount: '',
     videoLink: 'L9jU-IIN0ng',
     starCount: 5,
-    expanded: true,
+    expanded: false,
     aulas: 29,
     modulos: 5,
+    info: 'Conhecimentos sobre as condições atmosféricas e fenômenos meteorológicos.',
     list: [
       {
         content: 'How to reduce file pixel dimentions without loosing quality',
@@ -38,6 +39,7 @@ const popularCourseData = [
     expanded: false,
     aulas: 23,
     modulos: 5,
+    info: 'Aprenda a arte de voar com precisão e segurança',
     list: [
       {
         content: 'How to reduce file pixel dimentions without loosing quality',
@@ -62,6 +64,7 @@ const popularCourseData = [
     expanded: false,
     aulas: 20,
     modulos: 5,
+    info: 'Aprenda fundamentos e práticas para operar aeronaves com competência.',
     list: [
       {
         content: 'How to reduce file pixel dimentions without loosing quality',
@@ -86,6 +89,7 @@ const popularCourseData = [
     expanded: false,
     aulas: 26,
     modulos: 5,
+    info: 'Aprenda como garantir a segurança e eficiência das operações aéreas.',
     list: [
       {
         content: 'How to reduce file pixel dimentions without loosing quality',
@@ -125,6 +129,7 @@ const PopularCourse = () => {
               videoLink={course.videoLink}
               aulas={course.aulas}
               modulos={course.modulos}
+              info={course.info}
             />
           </Box>  
         ))}

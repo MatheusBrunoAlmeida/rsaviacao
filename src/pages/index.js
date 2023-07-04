@@ -30,9 +30,9 @@ export default function IndexPage() {
             {/* <FavoriteCourse /> */}
             <CtaThree />
             <PopularCourse />
-            <WorkFlow />
+            {/* <WorkFlow /> */}
             <Pricing />
-            <CtaTwo />
+            {/* <CtaTwo /> */}
             <FAQ />
             <CtaOne />
             <Modal />

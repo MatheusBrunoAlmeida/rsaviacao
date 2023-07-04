@@ -6,69 +6,70 @@ import PriceCard from '../components/price-card';
 
 const pricingMonthlyData = [
   {
-    name: 'Free Plan',
-    description: 'For Small teams or office',
-    buttonText: 'Start free trail',
+    name: 'Bloco específico',
+    description: 'Sómente parte do curso',
+    priceWithUnit: 'R$ 299,99',
+    buttonText: 'Comprar',
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
+        text: 'Seu próprio login na plataforma',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Free acess for all kind of exercise corrections with downloads.',
+        text: 'Acesso a newsletter e promoções de novos cursos',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
+        text: 'Contato direto com o professor',
         isAvailable: true,
       },
       {
         icon: <IoIosCloseCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
+        text: 'Acesso a todas as aulas do curso',
         isAvailable: false,
       },
       {
         icon: <IoIosCloseCircle />,
-        text: 'Download and print courses and exercises in PDF',
+        text: 'Receba atualizações das aulas futuramente',
         isAvailable: false,
       },
     ],
   },
   {
-    header: 'Recommended',
-    name: 'Premium',
-    description: 'For startup enterprise',
-    priceWithUnit: '$49.99/',
-    pricePeriod: 'mo',
-    buttonText: 'Subscribe Now',
+    header: 'Recomendado',
+    name: 'Curso inteiro',
+    description: 'Para todas as aulas',
+    priceWithUnit: 'R$999',
+    pricePeriod: '',
+    buttonText: 'Comprar',
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
+        text: 'Seu próprio login na plataforma',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Free acess for all kind of exercise corrections with downloads.',
+        text: 'Acesso a newsletter e promoções de novos cursos',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
+        text: 'Contato direto com o professor',
         isAvailable: true,
       },
       {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
-        isAvailable: true,
+        icon: <IoIosCloseCircle />,
+        text: 'Acesso a todas as aulas do curso',
+        isAvailable: true ,
       },
       {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Download and print courses and exercises in PDF',
-        isAvailable: true,
+        icon: <IoIosCloseCircle />,
+        text: 'Receba atualizações das aulas futuramente',
+        isAvailable: true ,
       },
     ],
   },
@@ -76,7 +77,7 @@ const pricingMonthlyData = [
 
 const pricingYearlyData = [
   {
-    name: 'Free Plan',
+    name: 'Bloco especifico',
     description: 'For Small teams or office',
     buttonText: 'Start free trail',
     points: [
@@ -151,10 +152,10 @@ const Pricing = () => {
       <Container>
         <BlockTitle
           sx={styles.pricing.blockTitle}
-          tagline="Pricing Plan"
-          heading="Choose your pricing policy"
+          tagline="PREÇOS"
+          heading="Escolha o melhor plano pra você"
         />
-        <Box sx={styles.pricing.btnWrap}>
+        {/* <Box sx={styles.pricing.btnWrap}>
           <Box as="ul" sx={styles.pricing.btnUl}>
             <Box
               as="li"
@@ -179,7 +180,7 @@ const Pricing = () => {
               Annual Plan
             </Box>
           </Box>
-        </Box>
+        </Box> */}
 
         <Grid sx={styles.pricing.wrapper}>
           {plan === true
@@ -267,6 +268,7 @@ const styles = {
       marginLeft: 'auto',
       marginRight: 'auto',
       width: ['100%', null, null, null, '990px'],
+      marginTop: '2rem'
     },
   },
 };
