@@ -1,6 +1,5 @@
 {
   "build": {
-    "env": {},
-    "command": "nvm install 15 && nvm use 15 && yarn build"
+    "env": {}
   }
 }
