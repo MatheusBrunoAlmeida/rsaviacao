@@ -1,8 +1,6 @@
 {
-  "builds": [
-    {
-      "src": "next.config.js",
-      "use": "@vercel/node@15.14.0"
-    }
-  ]
+  "build": {
+    "env": {},
+    "command": "nvm install 15 && nvm use 15 && yarn build"
+  }
 }
